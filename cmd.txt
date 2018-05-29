@@ -1,0 +1,11 @@
+python3 train.py --data_dir=data-amajor --logdir=log-amajor --lc_channels=42
+
+python3 ./generate.py --samples 12200 --lc_label_file ./1-gen.json --wav_out_path 1-gen.wav ./log-amajor/model.ckpt-18000
+
+python3 ./generate.py --samples 10200 --lc_label_file ./2-gen.json --wav_out_path 2-gen.wav ./log-amajor/model.ckpt-18000
+
+python3 ./generate.py --samples 12200 --lc_label_file ./3-gen.json --wav_out_path 3-gen.wav ./log-amajor/model.ckpt-18000
+
+python3 ./generate.py --samples 12500 --lc_label_file ./31-gen.json --wav_out_path 31-gen.wav ./log-amajor/model.ckpt-18000
+
+python3 ./generate.py --samples 12900 --lc_label_file ./32-gen.json --wav_out_path 32-gen.wav ./log-amajor/model.ckpt-18000
